@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    
+    font-family: "Poppins", sans-serif;
+    background-color: var(--accent-colors);
+    overflow: hidden;
+  }
+
+  /* Style for the navigation bar links */
+  .navbar a {
+    font-family: "Poppins", sans-serif;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  /* Style for the active tab */
+  .navbar a.active {
+    font-family: "Poppins", sans-serif;
+    background-color: #ddd;
+    color: #333;
+  }
