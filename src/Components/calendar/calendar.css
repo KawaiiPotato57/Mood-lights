@@ -1,0 +1,90 @@
+#calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+}
+.navigation-container p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #174a87;
+}
+
+.navigation-container button {
+  margin-right: 20px; /* Adjust margin between buttons and month name */
+  margin-left: 20px; /* Adjust margin between buttons and month name */
+}
+
+.nav-button {
+  background-color: #0583d2; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add border-radius */
+  transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.nav-button:hover {
+  background-color: #03649e; /* Hover background color */
+}
+
+.spacer {
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.day-names-container {
+  display: flex;
+}
+
+.day-name {
+  flex: 1;
+  padding: 10px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.dates-container {
+  display: grid;
+  grid-template-columns: repeat(
+    7,
+    1fr
+  ); /* Create a grid with 7 columns for the days */
+  gap: 18px; /* Adjust gap between dates */
+  justify-items: center; /* Align items horizontally in the center */
+}
+
+.date {
+  color: #000;
+  text-align: center;
+  padding: 0px; /* Increase padding for better spacing */
+  border: 1px solid #ccc; /* Add borders to separate dates */
+  border-radius: 50%; /* Add border-radius for rounded corners */
+  width: 30px; /* Adjust width of each date box */
+  height: 30px; /* Adjust height of each date box */
+  line-height: 30px; /* Center text vertically */
+  cursor: pointer; /* Add pointer cursor for interactivity */
+  position: relative;
+  display: inline-block;
+}
+
+/* .date::after {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+  } */
+
+.date:hover::after {
+  visibility: visible;
+  opacity: 1;
+}

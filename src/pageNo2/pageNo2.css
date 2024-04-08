@@ -1,0 +1,97 @@
+.container {
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 780px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #929292;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+.map {
+  width: 20vw;
+  height: 30vh;
+  background-color: #666;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.blimp {
+  width: 20px;
+  height: 20px;
+  background-color: #f00;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blimp.green {
+  background-color: #0f0;
+}
+.blimp.blue {
+  background-color: #00f;
+}
+.blimp.yellow {
+  background-color: #ff0;
+}
+.blimp.orange {
+  background-color: #ff8c00;
+}
+
+.message-box {
+  background-color: #808080;
+  padding: 20px;
+  width: 40vw;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 8%;
+}
+
+.message-box textarea {
+  width: 95%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
+.message-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dialog {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 100px;
+  border-radius: 10px;
+}
+.dialog h1 {
+  color: #ffffff;
+}
+.closeButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
