@@ -207,10 +207,10 @@ const updateBulbStateRealtime = async (isBulbOn) => {
         // Extract user email and name
         const email = user.email;
         const atIndex = email.indexOf('.com');
-        const name = email.slice(0, atIndex);
+        const name = email.slice(0, atIndex).toLowerCase();
 
         // Update the isBulbOn state in the user's record
-        await update(ref(db, `users/${name}`), { isBulbOn: isBulbOn.toString() });
+        await update(ref(db, `users/${name}`), { isBulbOn: isBulbOn });
 
         console.log('Bulb state updated successfully');
     } catch (error) {

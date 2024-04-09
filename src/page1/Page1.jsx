@@ -11,6 +11,7 @@ const Page1 = () => {
   const [isDefault, setIsDefault] = useState(false);
   const [isBulbOn, setIsBulbOn] = useState(false);
   const [user, setUser] = useState(null);
+  const [selectedMood, setSelectedMood] = useState({ name: "", color: "" });
 
   useEffect(() => {
     console.log("MYYYYYYYYYY User:", auth.currentUser);
@@ -56,7 +57,6 @@ const Page1 = () => {
 
   };
 
-  const [selectedMood, setSelectedMood] = useState({ name: "", color: "" });
 
   const handleMoodClick = (mood) => {
     console.log("MOOD SELECTED:", mood);
@@ -70,6 +70,7 @@ const Page1 = () => {
     }
   };
   useEffect(() => {
+
     handleMoodClick(selectedMood);
     sendUserDataRealtime(selectedMood.name, !isBulbOn);
     // sendColorRealTime(selectedMood.color);
@@ -134,6 +135,7 @@ const Page1 = () => {
 
   const handleLogout = async () => {
     try {
+      await updateBulbStateRealtime(false)
       await auth.signOut();
       console.log('User successfully signed out');
       navigate("/"); // Navigate to login page (replace with your actual login page path)

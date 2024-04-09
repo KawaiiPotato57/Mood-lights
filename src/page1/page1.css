@@ -40,6 +40,20 @@ span .logoutBtn {
   color: #333;
 }
 
+.dialog {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 100px;
+  border-radius: 10px;
+}
+
+.dialog h1 {
+  color: #ffffff;
+}
 .togglesDiv {
   display: flex;
   flex-direction: row;
