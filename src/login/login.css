@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #363636; /* Primary Color */
+  --secondary-color: #0e1723; /* Secondary Color */
+  --accent-color: #0a0f1a; /* Accent Color */
+  --background-color: #1e1e1e; /* Background Color */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--primary-color); /* Dark background */
+  color: #e0e0e0; /* Light text color for better readability */
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin-bottom: 8%;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+input {
+  background-color: #292d36; /* Input field background */
+  color: #e0e0e0; /* Text color within input field */
+  border: 1px solid #4a4a4a; /* Input field border */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  padding: 3%;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+input:focus {
+  outline: none; /* Remove default outline on focus */
+  border-color: #004a79; /* Change border color on focus for emphasis */
+}
+
+button {
+  background-color: #004b7a; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 12px 24px;
+  width: auto; /* Set width to auto to fit content */
+  margin: 2rem auto; /* Center the button horizontally with margin auto */
+  display: block; /* Ensure button is block-level for margin auto to work */
+  cursor: pointer; /* Pointer cursor on hover for interactivity */
+  transition: 0.3s; /* Smooth transition effect on hover */
+  border-radius: 8px; /* Add border-radius for modern look */
+}
+
+button:hover {
+  opacity: 0.8; /* Slight transparency on hover */
+}
+
+.login-container {
+  background-color: var(--accent-color); /* Login container background */
+  padding: 7%;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px 2px rgba(255, 255, 255, 0.3); /* Subtle shadow for depth */
+  /* horizontal align */
+  width: 40vw;
+  /* vertical align */
+  height: 60vh;
+
+  border-radius: 5px; /* Rounded corners for a cleaner look */
+}
+
+.login-container h1 {
+  color: #e0e0e0; /* Light text color for better readability */
+  margin-right: 20px;
+}
